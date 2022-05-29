@@ -1,0 +1,15 @@
+@import './Home.module.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

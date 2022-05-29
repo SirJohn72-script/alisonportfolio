@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.container__wrapper {
+  width: 100%;
+  max-width: 1500px;
+  height: 100%;
+  margin: auto;
+
+  @media (max-width: 992px) {
+    padding: 0 0.5rem;
+  }
+}
+
+// Modifiers
+.container--padding-top {
+  padding-top: 70px;
+}
+
+.container--padding-secction {
+  padding: 3rem 0;
+}
+
+// Colors
+.container--yellow {
+  background-color: $color-yellow;
+}
+
+.container--grey {
+  background-color: $color-grey;
+}
