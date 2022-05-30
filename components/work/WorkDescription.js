@@ -5,7 +5,7 @@ export default function WorkDescription({ images, description, title }) {
   const [descriptionArray, setDescriptionArray] = useState([])
   useEffect(() => {
     setDescriptionArray(description.split('???'))
-  }, [])
+  }, [description])
 
   return (
     <div className="container container--grey container--padding-secction container--min-height">
