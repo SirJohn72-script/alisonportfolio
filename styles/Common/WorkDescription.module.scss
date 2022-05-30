@@ -1,0 +1,73 @@
+@import './Gallery.module.scss';
+
+.workdescription__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5rem 0.5rem;
+  align-items: center;
+
+  @media (max-width: 992px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.workdescription__text {
+  width: 40%;
+  height: 100%;
+  // outline: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 992px) {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
+
+.workdescription__gallery {
+  width: 60%;
+  height: 100%;
+
+  @media (max-width: 992px) {
+    width: 100%;
+    max-width: 720px;
+  }
+}
+
+.workdescription__text_content {
+  h1 {
+    color: $color-dark;
+    font-family: $font-header;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  p {
+    padding: 0.5rem 0;
+    color: $color-darkgrey;
+    font-family: $font-body;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  @media (max-width: 992px) {
+    p {
+      width: 100%;
+      max-width: 720px;
+    }
+  }
+}
+
+.workdescription__text_content--responsive {
+  display: none;
+
+  h1 {
+    display: block;
+  }
+}

@@ -2,6 +2,15 @@
   width: 100%;
   height: 100vh;
   min-height: 100vh;
+
+  @media (max-width: 992px) {
+    height: fit-content;
+  }
+}
+
+.container--min-height {
+  min-height: auto;
+  height: fit-content;
 }
 
 .container__wrapper {
@@ -21,7 +30,7 @@
 }
 
 .container--padding-secction {
-  padding: 3rem 0;
+  padding: 1.5rem 0;
 }
 
 // Colors

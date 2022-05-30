@@ -1,0 +1,65 @@
+.footer {
+  width: 100%;
+  background-color: $color-dark;
+  overflow: hidden;
+}
+
+.footer__wrapper {
+  padding: 1rem 0;
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__item {
+  width: 100%;
+  text-align: center;
+}
+
+.footer__heading {
+  padding-top: 1rem;
+  color: $color-darkgrey;
+  font-size: 1rem;
+  font-family: $font-header;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.linefooter__break {
+  margin: 0.5rem 0;
+  max-width: 600px;
+  width: 100%;
+  height: 1px;
+  background-color: $color-darkgrey;
+}
+
+.footer__subheading {
+  color: $color-darkgrey;
+  font-size: 1rem;
+  font-family: $font-header;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.footer__link_author {
+  a,
+  a:visited {
+    color: $color-link;
+    font-size: 1rem;
+    font-family: $font-header;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+.footer__copy {
+  color: $color-white;
+  font-size: 1rem;
+  font-family: $font-header;
+  font-weight: 400;
+}

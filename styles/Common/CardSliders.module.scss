@@ -198,20 +198,36 @@
   padding: 0.5rem 1.5rem;
   border: none;
   background-color: $color-dark;
-  font-size: 1rem;
-  color: $color-darkgrey;
-  font-family: $font-body;
-  font-weight: 400;
-  text-transform: uppercase;
   cursor: pointer;
   transition: 0.3s all ease;
   -webkit-transition: 0.3s all ease;
   -moz-transition: 0.3s all ease;
   -ms-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
+  a,
+  a:visited {
+    text-decoration: none;
+    font-size: 1rem;
+    color: $color-darkgrey;
+    font-family: $font-body;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+  }
 
   &:hover {
-    color: $color-grey;
+    a {
+      color: $color-grey;
+      transition: 0.3s all ease;
+      -webkit-transition: 0.3s all ease;
+      -moz-transition: 0.3s all ease;
+      -ms-transition: 0.3s all ease;
+      -o-transition: 0.3s all ease;
+    }
     background-color: $color-darkgrey;
     -webkit-box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.3);
     box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.3);

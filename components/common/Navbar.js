@@ -4,6 +4,7 @@ import SocialMedia from './SocialMedia'
 import { colordark, colorgrey } from '../../styles/Vars/Variables.module.scss'
 import { RootHeader, NavbarVariants } from '../motion/variants'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 export default function Navbar() {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
@@ -33,7 +34,9 @@ export default function Navbar() {
     >
       <motion.div className={'navbar__wrapper'} variants={NavbarVariants}>
         <h2 className={'navbar__logo'} ref={Logo}>
-          Alison&apos;s Portfolio
+          <Link href="/">
+            <a onClick={() => handleMobileMenu()}>Alison&apos;s Portfolio</a>
+          </Link>
         </h2>
 
         <div
@@ -46,13 +49,11 @@ export default function Navbar() {
 
         <ul className={'navbar__menu'} ref={Menu}>
           <li className={'navbar__item'}>
-            <a
-              href="#"
-              className={'navbar__link'}
-              onClick={() => handleMobileMenu()}
-            >
-              home
-            </a>
+            <Link href="/">
+              <a className={'navbar__link'} onClick={() => handleMobileMenu()}>
+                home
+              </a>
+            </Link>
           </li>
           <li className={'navbar__item'}>
             <a

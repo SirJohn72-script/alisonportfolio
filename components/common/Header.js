@@ -5,8 +5,9 @@ import {
   DarkLettersChild,
   ImageVariants,
 } from '../motion/variants'
+import { useEffect } from 'react'
 
-export default function Header() {
+export default function Header({ title = '', image = '' }) {
   return (
     <div className={'container container--yellow'}>
       <div className={'container__wrapper container--padding-top '}>
