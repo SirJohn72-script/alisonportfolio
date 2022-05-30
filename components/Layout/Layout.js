@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Navbar from '../common/Navbar'
-import ScrollToTop from '../common/ScrollToTop'
 import Footer from '../pages/Footer'
 
 export default function Layout({ children }) {
@@ -15,10 +14,7 @@ export default function Layout({ children }) {
         <Navbar />
       </nav>
 
-      <main>
-        {/* <ScrollToTop /> */}
-        {children}
-      </main>
+      <main>{children}</main>
 
       <footer>
         <Footer />
