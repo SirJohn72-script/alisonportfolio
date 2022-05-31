@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import Navbar from '../common/Navbar'
 import Footer from '../pages/Footer'
 
-export default function Layout({ children }) {
+export default function Layout({ children, navbar }) {
   return (
     <>
       <Head>
@@ -10,9 +9,7 @@ export default function Layout({ children }) {
         <meta description="Pagina de Alison Parker" />
       </Head>
 
-      <nav>
-        <Navbar />
-      </nav>
+      <nav>{navbar}</nav>
 
       <main>{children}</main>
 

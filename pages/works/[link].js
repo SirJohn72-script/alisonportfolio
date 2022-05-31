@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import HeaderWorks from '../../components/common/HeaderWorks'
+import NavbarWorks from '../../components/common/Navbar.works'
 import Layout from '../../components/Layout/Layout'
 import Demo from '../../components/work/Demo'
 import WorkDescription from '../../components/work/WorkDescription'
@@ -9,11 +10,11 @@ export default function Work({ data }) {
   useEffect(() => {
     setTimeout(() => {
       window.scrollTo(0, 0)
-    }, 500)
+    }, 1000)
   }, [])
 
   return (
-    <Layout>
+    <Layout navbar={<NavbarWorks />}>
       <HeaderWorks title={data.title} image={data.image} />
       <WorkDescription
         images={data.images}

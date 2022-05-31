@@ -37,7 +37,7 @@ export default function Works() {
   }
 
   return (
-    <div className="container container--grey ">
+    <div className="container container--grey " id="works-secction">
       <div className="container__wrapper container--padding-secction">
         <div className="works">
           <div className="works__contaier">

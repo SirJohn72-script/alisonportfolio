@@ -9,7 +9,13 @@ export default function Gallery({ images }) {
       <div className="gallery__wrapper">
         <div className="gallery__currentphoto">
           <div className="gallery__currentphoto_wrapper">
-            <Image src={currentPhoto} alt="control" layout="fill" />
+            <Image
+              src={currentPhoto}
+              alt="control"
+              layout="fill"
+              priority
+              blurDataURL
+            />
           </div>
         </div>
         <div className="gallery__thumpnails">
@@ -19,7 +25,13 @@ export default function Gallery({ images }) {
               className="gallery__thumpnails_wrapper"
               onClick={() => setCurrentPhoto(photo)}
             >
-              <Image src={photo} alt="control" layout="fill" />
+              <Image
+                src={photo}
+                alt="control"
+                layout="fill"
+                priority
+                blurDataURL
+              />
             </div>
           ))}
         </div>

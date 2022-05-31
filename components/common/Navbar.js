@@ -5,6 +5,7 @@ import { colordark, colorgrey } from '../../styles/Vars/Variables.module.scss'
 import { RootHeader, NavbarVariants } from '../motion/variants'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { Link as LinkScroll } from 'react-scroll'
 
 export default function Navbar() {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
@@ -56,31 +57,34 @@ export default function Navbar() {
             </Link>
           </li>
           <li className={'navbar__item'}>
-            <a
-              href="#"
+            <LinkScroll
+              to="works-secction"
+              smooth={true}
               className={'navbar__link'}
               onClick={() => handleMobileMenu()}
             >
               works
-            </a>
+            </LinkScroll>
           </li>
           <li className={'navbar__item'}>
-            <a
-              href="#"
+            <LinkScroll
+              to="about-secction"
+              smooth={true}
               className={'navbar__link'}
               onClick={() => handleMobileMenu()}
             >
               about
-            </a>
+            </LinkScroll>
           </li>
           <li className={'navbar__item'}>
-            <a
-              href="#"
+            <LinkScroll
+              to="contact-secction"
+              smooth={true}
               className={'navbar__link'}
               onClick={() => handleMobileMenu()}
             >
               contact
-            </a>
+            </LinkScroll>
           </li>
 
           <SocialMedia

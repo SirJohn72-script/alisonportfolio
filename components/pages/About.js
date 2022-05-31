@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className="container container--min-height">
+    <div className="container container--min-height" id="about-secction">
       <div className="container__wrapper container--padding-secction">
         <div className="about">
           <div className="about__wrapper">
