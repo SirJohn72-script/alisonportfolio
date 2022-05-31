@@ -10,7 +10,7 @@ export default function Work({ data }) {
   useEffect(() => {
     setTimeout(() => {
       window.scrollTo(0, 0)
-    }, 1000)
+    }, 500)
   }, [])
 
   return (
