@@ -1,20 +1,28 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import HeaderWorks from '../../components/common/HeaderWorks'
 import NavbarWorks from '../../components/common/Navbar.works'
 import Layout from '../../components/Layout/Layout'
 import Demo from '../../components/work/Demo'
 import WorkDescription from '../../components/work/WorkDescription'
 import { WorksPages } from '../../Info/InfoPages'
+import { motion } from 'framer-motion'
+import { RootHeaderWorkPage } from '../../components/motion/variants'
+import WhitePage from '../../components/common/WhitePage'
 
 export default function Work({ data }) {
+  const [whitePage, setWhitePage] = useState(true)
+
   useEffect(() => {
     setTimeout(() => {
       window.scrollTo(0, 0)
+      setWhitePage(false)
     }, 500)
   }, [])
 
   return (
     <Layout navbar={<NavbarWorks />}>
+      <WhitePage whitePage={whitePage} setWhitePage={setWhitePage} />
+
       <HeaderWorks title={data.title} image={data.image} />
       <WorkDescription
         images={data.images}

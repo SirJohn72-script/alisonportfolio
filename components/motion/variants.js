@@ -12,6 +12,38 @@ export const RootHeader = {
   },
 }
 
+export const RootHeaderWork = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.1,
+      duration: 1.2,
+      when: 'beforeChildren',
+      staggerChildren: 0.4,
+    },
+  },
+}
+
+//
+export const RootHeaderWorkPage = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    border: '10px solid red',
+    transition: {
+      delay: 0.1,
+      duration: 10,
+      when: 'beforeChildren',
+      staggerChildren: 0.4,
+    },
+  },
+}
+
 // Dark letter
 export const DarkLetterRoot = {
   hidden: {

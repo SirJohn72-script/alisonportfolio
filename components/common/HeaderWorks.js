@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import {
-  RootHeader,
+  RootHeaderWork,
   DarkLetterRoot,
   DarkLettersChild,
   ImageVariants,
@@ -21,7 +21,7 @@ export default function HeaderWorks({ title = '', image = '' }) {
           className="header"
           initial="hidden"
           animate="visible"
-          variants={RootHeader}
+          variants={RootHeaderWork}
         >
           <div className="header__wrapper">
             <div className="header__centercontent">

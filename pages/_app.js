@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps, router }) {
           pageAnimate: {
             opacity: 1,
             transition: {
-              duration: 1.5,
+              duration: 1.2,
               type: 'tween',
             },
           },
